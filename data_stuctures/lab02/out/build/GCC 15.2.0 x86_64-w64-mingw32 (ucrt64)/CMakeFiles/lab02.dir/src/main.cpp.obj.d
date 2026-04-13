@@ -1,15 +1,21 @@
 CMakeFiles/lab02.dir/src/main.cpp.obj: \
  C:\Users\hlebushek\Desktop\data_structures\data_stuctures\lab02\src\main.cpp \
- C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab02/include/StackArray.h \
- C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab02/include/Stack.h \
- C:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
- C:/msys64/ucrt64/include/c++/15.2.0/exception \
+ C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab02/include/DoubleOrderedDuplicateList.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/utility \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_relops.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/move.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
+ C:/msys64/ucrt64/include/c++/15.2.0/initializer_list \
+ C:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
+ C:/msys64/ucrt64/include/c++/15.2.0/exception \
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
@@ -23,8 +29,6 @@ CMakeFiles/lab02.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h \
  C:/msys64/ucrt64/include/c++/15.2.0/new \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/move.h \
- C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/nested_exception.h \
  C:/msys64/ucrt64/include/c++/15.2.0/string \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
@@ -67,8 +71,6 @@ CMakeFiles/lab02.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/backward/binders.h \
  C:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
  C:/msys64/ucrt64/include/c++/15.2.0/debug/debug.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/predefined_ops.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bit \
@@ -76,7 +78,6 @@ CMakeFiles/lab02.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/invoke.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
- C:/msys64/ucrt64/include/c++/15.2.0/initializer_list \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.h \
  C:/msys64/ucrt64/include/c++/15.2.0/ext/alloc_traits.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h \
@@ -143,4 +144,6 @@ CMakeFiles/lab02.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/istream \
- C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc
+ C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
+ C:/msys64/ucrt64/include/c++/15.2.0/cassert \
+ C:/msys64/ucrt64/include/assert.h
