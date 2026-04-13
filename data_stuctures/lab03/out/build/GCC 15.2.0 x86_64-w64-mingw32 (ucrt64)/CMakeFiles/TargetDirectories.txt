@@ -1,0 +1,3 @@
+C:/Users/hlebushek/Desktop/data_structures/lab03/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/lab03.dir
+C:/Users/hlebushek/Desktop/data_structures/lab03/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/edit_cache.dir
+C:/Users/hlebushek/Desktop/data_structures/lab03/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/rebuild_cache.dir
