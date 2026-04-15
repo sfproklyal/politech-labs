@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/hlebushek/Desktop/data_structures/lab04/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
+			"value" : "c:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab04/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/hlebushek/Desktop/data_structures/lab04/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab04/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/hlebushek/Desktop/data_structures/lab04"
+			"value" : "C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab04"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/hlebushek/Desktop/data_structures/lab04/out/install/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
+			"value" : "C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab04/out/install/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1379,7 +1379,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/hlebushek/Desktop/data_structures/lab04/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
+			"value" : "C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab04/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
 		},
 		{
 			"name" : "lab04_IS_TOP_LEVEL",
@@ -1403,7 +1403,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/hlebushek/Desktop/data_structures/lab04"
+			"value" : "C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab04"
 		}
 	],
 	"kind" : "cache",

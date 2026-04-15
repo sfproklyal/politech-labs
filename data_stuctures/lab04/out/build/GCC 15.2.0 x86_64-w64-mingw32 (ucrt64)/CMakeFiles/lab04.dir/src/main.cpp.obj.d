@@ -1,5 +1,5 @@
 CMakeFiles/lab04.dir/src/main.cpp.obj: \
- C:\Users\hlebushek\Desktop\data_structures\lab04\src\main.cpp \
+ C:\Users\hlebushek\Desktop\data_structures\data_stuctures\lab04\src\main.cpp \
  C:/msys64/ucrt64/include/c++/15.2.0/iostream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -139,7 +139,7 @@ CMakeFiles/lab04.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/15.2.0/istream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/istream.tcc \
- C:/Users/hlebushek/Desktop/data_structures/lab04/include/BinarySearchTree.h \
+ C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab04/include/BinarySearchTree.h \
  C:/msys64/ucrt64/include/c++/15.2.0/algorithm \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algo.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/algorithmfwd.h \

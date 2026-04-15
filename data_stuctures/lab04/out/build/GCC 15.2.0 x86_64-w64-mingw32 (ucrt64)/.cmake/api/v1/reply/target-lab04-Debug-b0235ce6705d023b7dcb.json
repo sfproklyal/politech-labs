@@ -34,7 +34,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 7,
+				"line" : 5,
 				"parent" : 0
 			}
 		]
@@ -57,7 +57,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/hlebushek/Desktop/data_structures/lab04/include"
+					"path" : "C:/Users/hlebushek/Desktop/data_structures/data_stuctures/lab04/include"
 				}
 			],
 			"language" : "CXX",

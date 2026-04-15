@@ -1,3 +1,0 @@
-C:/Users/hlebushek/Desktop/data_structures/lab04/build/CMakeFiles/lab04.dir
-C:/Users/hlebushek/Desktop/data_structures/lab04/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/hlebushek/Desktop/data_structures/lab04/build/CMakeFiles/ZERO_CHECK.dir

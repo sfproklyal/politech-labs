@@ -80,10 +80,24 @@ private:
         if (node == nullptr) return;
         
         inorderWalk(node->left_);
-        std::cout << node->key_ << " ";
+        std::cout << node->key_;
         inorderWalk(node->right_);
     }
 
+    void transplant(Node* u, Node* v) {
+        if (u->p_ == nullptr) { // если u корень
+            root_ = v;
+        } 
+        else if (u == u->p_->left_) { // если u девый ребенок
+            u->p_->left_ = v;
+        }
+        else {  // если правый
+            u->p_->right_ = v;
+        }
+        if (v != nullptr) { // замен родителя
+            v->p_ = u->p_;
+        }
+    }
 
 public:
     BinarySearchTree() : root_(nullptr) {};
@@ -111,6 +125,7 @@ public:
         return searchNodeIterative(key) != nullptr;
     }
 
+
     bool insert(const T& key) {
         Node* parent = nullptr;
         Node* current = root_;
@@ -129,6 +144,41 @@ public:
         else if (key < parent->key_) parent->left_ = newNode;
         else parent->right_ = newNode;
         
+        return true;
+    }
+
+    bool remove(const T& key) {
+        Node* z = searchNodeIterative(key);
+
+        if (z == nullptr) {
+            return false;
+        }
+
+        if (z->left_ == nullptr) {
+            transplant(z, z->right_);
+        }
+        else if (z->right_ == nullptr) {
+            transplant(z, z->left_);
+        }
+        else {
+            Node* y = minimum(z->right_);
+
+            if (y->p_ != z) {
+                transplant(y, y->right_);
+                y->right_ = z->right_;
+                if (y->right_ != nullptr) {
+                    y->right_->p_ = y;
+                }
+            }
+
+            transplant(z, y);
+            y->left_ = z->left_;
+            if (y->left_ != nullptr) {
+                y->left_->p_ = y;
+            }
+        }
+
+        delete z;
         return true;
     }
 
@@ -182,6 +232,46 @@ public:
         std::cout << '\n';
     }
 
+    bool isSimilar(const BinarySearchTree<T>& other) const {
+        std::stack<Node*> st1;
+        std::stack<Node*> st2;
+
+        Node* current1 = root_;
+        Node* current2 = other.root_;
+
+        while ((current1 != nullptr || !st1.empty()) && (current2 != nullptr || !st2.empty())) {
+
+            while (current1 != nullptr) {
+                st1.push(current1);
+                current1 = current1->left_;
+            }
+
+            while (current2 != nullptr) {
+                st2.push(current2);
+                current2 = current2->left_;
+            }
+
+            if (st1.empty() != st2.empty()) {
+                return false;
+            }
+
+            current1 = st1.top();
+            st1.pop();
+
+            current2 = st2.top();
+            st2.pop();
+
+            if (current1->key_ != current2->key_) {
+                return false;
+            }
+
+            current1 = current1->right_;
+            current2 = current2->right_;
+        }
+
+        return current1 == nullptr && current2 == nullptr &&
+            st1.empty() && st2.empty();
+    }
 
 };
 
