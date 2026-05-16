@@ -1,0 +1,3 @@
+C:/Users/hlebushek/Desktop/c++/data_stuctures/lab03/out/build/gcc-debug/CMakeFiles/lab03.dir
+C:/Users/hlebushek/Desktop/c++/data_stuctures/lab03/out/build/gcc-debug/CMakeFiles/edit_cache.dir
+C:/Users/hlebushek/Desktop/c++/data_stuctures/lab03/out/build/gcc-debug/CMakeFiles/rebuild_cache.dir

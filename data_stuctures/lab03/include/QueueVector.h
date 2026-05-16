@@ -13,6 +13,7 @@ private:
     size_t head_;
     size_t tail_;
 public:
+    Queue()     
     
 
 };
