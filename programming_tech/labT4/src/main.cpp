@@ -34,14 +34,9 @@ int main() {
         )
     );
 
-    auto composite = std::make_unique<CompositeShape>();
-    composite->addShape(std::make_unique<Rectangle>(
-        Point(1.0, 1.0), Point(3.0, 4.0)
-    ));
-    composite->addShape(std::make_unique<Rhombus>(
-        Point(2.0, 2.0), 1.5, 2.5
-    ));
-    shapes.push_back(std::move(composite));
+    std::unique_ptr<CompositeShape> composite = std::make_unique<CompositeShape>();
+    
+
 
     return 0;
 }
