@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/complucter/Desktop/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/course_work.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\course_work.dir\\src\\main.cpp.obj -c C:\\Users\\complucter\\Desktop\\course_work\\src\\main.cpp",
+  "file": "C:/Users/complucter/Desktop/course_work/src/main.cpp",
+  "output": "CMakeFiles/course_work.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/complucter/Desktop/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/course_work.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\course_work.dir\\src\\LineList.cpp.obj -c C:\\Users\\complucter\\Desktop\\course_work\\src\\LineList.cpp",
+  "file": "C:/Users/complucter/Desktop/course_work/src/LineList.cpp",
+  "output": "CMakeFiles/course_work.dir/src/LineList.cpp.obj"
+},
+{
+  "directory": "C:/Users/complucter/Desktop/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/course_work.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\course_work.dir\\src\\RedBlackTree.cpp.obj -c C:\\Users\\complucter\\Desktop\\course_work\\src\\RedBlackTree.cpp",
+  "file": "C:/Users/complucter/Desktop/course_work/src/RedBlackTree.cpp",
+  "output": "CMakeFiles/course_work.dir/src/RedBlackTree.cpp.obj"
+},
+{
+  "directory": "C:/Users/complucter/Desktop/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/course_work.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\course_work.dir\\src\\CrossReferences.cpp.obj -c C:\\Users\\complucter\\Desktop\\course_work\\src\\CrossReferences.cpp",
+  "file": "C:/Users/complucter/Desktop/course_work/src/CrossReferences.cpp",
+  "output": "CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj"
+}
+]
