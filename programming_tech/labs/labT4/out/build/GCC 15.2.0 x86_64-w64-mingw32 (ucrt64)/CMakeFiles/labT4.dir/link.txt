@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\labT4.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\labT4.dir/objects.a @CMakeFiles\labT4.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\labT4.dir/objects.a -Wl,--no-whole-archive -o labT4.exe -Wl,--out-implib,liblabT4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\labT4.dir\linkLibs.rsp
