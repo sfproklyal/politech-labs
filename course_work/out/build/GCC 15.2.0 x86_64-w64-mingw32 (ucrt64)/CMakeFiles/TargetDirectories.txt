@@ -1,3 +1,0 @@
-C:/Users/hlebushek/Desktop/c++/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/course_work.dir
-C:/Users/hlebushek/Desktop/c++/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/edit_cache.dir
-C:/Users/hlebushek/Desktop/c++/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/rebuild_cache.dir

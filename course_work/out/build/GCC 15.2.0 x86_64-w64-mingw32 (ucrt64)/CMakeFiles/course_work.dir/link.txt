@@ -1,3 +1,0 @@
-"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\course_work.dir/objects.a
-C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\course_work.dir/objects.a @CMakeFiles\course_work.dir\objects1.rsp
-C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\course_work.dir/objects.a -Wl,--no-whole-archive -o course_work.exe -Wl,--out-implib,libcourse_work.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\course_work.dir\linkLibs.rsp
