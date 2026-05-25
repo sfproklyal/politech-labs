@@ -1,6 +1,5 @@
 #include "CrossReferences.h"
 
-#include <fstream>
 #include <iostream>
 #include <stdexcept>
 
@@ -140,35 +139,7 @@ bool throwsInvalidArgumentForLineList()
     return false;
 }
 
-bool throwsRuntimeErrorForMissingFile()
-{
-    try {
-        readTextFromFile("__missing_course_work_input__.txt");
-    }
-    catch (const std::runtime_error&) {
-        return true;
-    }
-    return false;
-}
-
 }  // namespace
-
-Vector<std::string> readTextFromFile(const std::string& path)
-{
-    std::ifstream file(path);
-    if (!file.is_open()) {
-        throw std::runtime_error("Can not open file: " + path);
-    }
-
-    Vector<std::string> lines;
-    std::string line;
-
-    while (std::getline(file, line)) {
-        lines.push_back(line);
-    }
-
-    return lines;
-}
 
 Vector<std::string> readTextFromConsole()
 {
@@ -381,10 +352,6 @@ void runTests()
               failed);
     }
 
-    check(throwsRuntimeErrorForMissingFile(),
-          "missing file throws exception",
-          passed,
-          failed);
     check(throwsInvalidArgumentForEmptyKey(),
           "empty key throws exception",
           passed,

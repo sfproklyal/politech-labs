@@ -22,7 +22,6 @@ CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj: C:/Users/complucter/Desk
   C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/char_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/charconv.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/codecvt.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/concept_check.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/cpp_type_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_forced.h \
@@ -30,7 +29,6 @@ CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj: C:/Users/complucter/Desk
   C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_defines.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/fstream.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/hash_bytes.h \
@@ -90,7 +88,6 @@ CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj: C:/Users/complucter/Desk
   C:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/fstream \
   C:/msys64/ucrt64/include/c++/15.2.0/initializer_list \
   C:/msys64/ucrt64/include/c++/15.2.0/ios \
   C:/msys64/ucrt64/include/c++/15.2.0/iosfwd \
@@ -110,10 +107,8 @@ CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj: C:/Users/complucter/Desk
   C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
   C:/msys64/ucrt64/include/c++/15.2.0/utility \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
@@ -644,9 +639,9 @@ C:/Users/complucter/Desktop/course_work/course_work/include/LineList.h:
 
 C:/Users/complucter/Desktop/course_work/course_work/include/RedBlackTree.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc:
-
 C:/msys64/ucrt64/include/_mingw.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h:
 
@@ -686,12 +681,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/char_traits.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/charconv.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/codecvt.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/postypes.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/ios_base.h:
@@ -718,10 +707,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/exception.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/exception_ptr.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/fstream.tcc:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h:
@@ -729,6 +714,8 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/functexcept.h:
 C:/msys64/ucrt64/include/c++/15.2.0/bits/ptr_traits.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/functional_hash.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/string:
 
@@ -762,6 +749,12 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h:
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h:
+
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
 C:/Users/complucter/Desktop/course_work/course_work/src/LineList.cpp:
@@ -769,8 +762,6 @@ C:/Users/complucter/Desktop/course_work/course_work/src/LineList.cpp:
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_relops.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc:
 
@@ -814,8 +805,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/ext/numeric_traits.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/ext/type_traits.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/fstream:
-
 C:/msys64/ucrt64/include/c++/15.2.0/initializer_list:
 
 C:/msys64/ucrt64/include/c++/15.2.0/ios:
@@ -850,11 +839,7 @@ C:/msys64/ucrt64/include/c++/15.2.0/utility:
 
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++io.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h:
 

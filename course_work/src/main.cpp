@@ -8,9 +8,8 @@ int main()
 {
     try {
         std::cout << "1 - enter text\n";
-        std::cout << "2 - read text from file\n";
-        std::cout << "3 - demo text\n";
-        std::cout << "4 - run tests\n";
+        std::cout << "2 - demo text\n";
+        std::cout << "3 - run tests\n";
         std::cout << "Choice: ";
 
         int choice = 0;
@@ -24,15 +23,9 @@ int main()
             processText(readTextFromConsole());
         }
         else if (choice == 2) {
-            std::string path;
-            std::cout << "File path: ";
-            std::getline(std::cin, path);
-            processText(readTextFromFile(path));
-        }
-        else if (choice == 3) {
             processText(getDemoText());
         }
-        else if (choice == 4) {
+        else if (choice == 3) {
             runTests();
         }
         else {

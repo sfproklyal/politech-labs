@@ -5,7 +5,6 @@
 
 #include "Vector.h"
 
-Vector<std::string> readTextFromFile(const std::string& path);
 Vector<std::string> readTextFromConsole();
 Vector<std::string> getDemoText();
 
