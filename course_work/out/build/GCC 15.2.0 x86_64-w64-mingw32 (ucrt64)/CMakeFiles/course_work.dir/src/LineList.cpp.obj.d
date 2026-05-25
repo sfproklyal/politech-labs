@@ -1,6 +1,6 @@
 CMakeFiles/course_work.dir/src/LineList.cpp.obj: \
- C:\Users\complucter\Desktop\course_work\course_work\src\LineList.cpp \
- C:/Users/complucter/Desktop/course_work/course_work/include/LineList.h \
+ C:\Users\hlebushek\Desktop\c++\course_work\src\LineList.cpp \
+ C:/Users/hlebushek/Desktop/c++/course_work/include/LineList.h \
  C:/msys64/ucrt64/include/c++/15.2.0/cstddef \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
@@ -12,6 +12,7 @@ CMakeFiles/course_work.dir/src/LineList.cpp.obj: \
  C:/msys64/ucrt64/include/_mingw_mac.h \
  C:/msys64/ucrt64/include/_mingw_secapi.h \
  C:/msys64/ucrt64/include/vadefs.h \
+ C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
  C:/msys64/ucrt64/include/c++/15.2.0/iostream \
  C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
@@ -25,8 +26,6 @@ CMakeFiles/course_work.dir/src/LineList.cpp.obj: \
  C:/msys64/ucrt64/include/c++/15.2.0/cwchar \
  C:/msys64/ucrt64/include/wchar.h \
  C:/msys64/ucrt64/include/corecrt_stdio_config.h \
- C:/msys64/ucrt64/include/corecrt_wconio.h \
- C:/msys64/ucrt64/include/sec_api/wconio_s.h \
  C:/msys64/ucrt64/include/corecrt_wstdlib.h \
  C:/msys64/ucrt64/include/corecrt_wctype.h \
  C:/msys64/ucrt64/include/_mingw_off_t.h \

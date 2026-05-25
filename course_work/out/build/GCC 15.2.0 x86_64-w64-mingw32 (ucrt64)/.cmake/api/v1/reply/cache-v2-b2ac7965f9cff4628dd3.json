@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/complucter/Desktop/course_work/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
+			"value" : "c:/Users/hlebushek/Desktop/c++/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -155,10 +155,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "C:/msys64/ucrt64/bin/g++.exe"
 		},
 		{
@@ -299,10 +299,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "UNINITIALIZED",
 			"value" : "C:/msys64/ucrt64/bin/gcc.exe"
 		},
 		{
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/complucter/Desktop/course_work/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/hlebushek/Desktop/c++/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/complucter/Desktop/course_work/course_work"
+			"value" : "C:/Users/hlebushek/Desktop/c++/course_work"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Users/complucter/Desktop/course_work/course_work/out/install/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
+			"value" : "C:/Users/hlebushek/Desktop/c++/course_work/out/install/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -1387,7 +1387,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/complucter/Desktop/course_work/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
+			"value" : "C:/Users/hlebushek/Desktop/c++/course_work/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)"
 		},
 		{
 			"name" : "course_work_IS_TOP_LEVEL",
@@ -1411,7 +1411,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/complucter/Desktop/course_work/course_work"
+			"value" : "C:/Users/hlebushek/Desktop/c++/course_work"
 		}
 	],
 	"kind" : "cache",

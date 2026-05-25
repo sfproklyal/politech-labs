@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/complucter/Desktop/course_work/course_work/src/CrossReferences.cpp" "CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj" "gcc" "CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj.d"
-  "C:/Users/complucter/Desktop/course_work/course_work/src/LineList.cpp" "CMakeFiles/course_work.dir/src/LineList.cpp.obj" "gcc" "CMakeFiles/course_work.dir/src/LineList.cpp.obj.d"
-  "C:/Users/complucter/Desktop/course_work/course_work/src/RedBlackTree.cpp" "CMakeFiles/course_work.dir/src/RedBlackTree.cpp.obj" "gcc" "CMakeFiles/course_work.dir/src/RedBlackTree.cpp.obj.d"
-  "C:/Users/complucter/Desktop/course_work/course_work/src/main.cpp" "CMakeFiles/course_work.dir/src/main.cpp.obj" "gcc" "CMakeFiles/course_work.dir/src/main.cpp.obj.d"
+  "C:/Users/hlebushek/Desktop/c++/course_work/src/CrossReferences.cpp" "CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj" "gcc" "CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj.d"
+  "C:/Users/hlebushek/Desktop/c++/course_work/src/LineList.cpp" "CMakeFiles/course_work.dir/src/LineList.cpp.obj" "gcc" "CMakeFiles/course_work.dir/src/LineList.cpp.obj.d"
+  "C:/Users/hlebushek/Desktop/c++/course_work/src/RedBlackTree.cpp" "CMakeFiles/course_work.dir/src/RedBlackTree.cpp.obj" "gcc" "CMakeFiles/course_work.dir/src/RedBlackTree.cpp.obj.d"
+  "C:/Users/hlebushek/Desktop/c++/course_work/src/main.cpp" "CMakeFiles/course_work.dir/src/main.cpp.obj" "gcc" "CMakeFiles/course_work.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
