@@ -10,6 +10,7 @@ int main()
         std::cout << "1 - enter text\n";
         std::cout << "2 - demo text\n";
         std::cout << "3 - run tests\n";
+        std::cout << "4 - read text from file\n";
         std::cout << "Choice: ";
 
         int choice = 0;
@@ -27,6 +28,12 @@ int main()
         }
         else if (choice == 3) {
             runTests();
+        }
+        else if (choice == 4) {
+            std::string fileName;
+            std::cout << "Enter file name: ";
+            std::getline(std::cin, fileName);
+            processText(readTextFromFile(fileName));
         }
         else {
             std::cout << "Wrong choice\n";

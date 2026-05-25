@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdexcept>
 #include "StackArray.h"
+#include "QueueVector.h"
 #include "checkBalanceBrackets.h"
 
 void printResult(const char* testName, bool passed) {
@@ -219,6 +220,161 @@ int main() {
         }
 
         updateOverall(allPassed, "brackets invalid depth throws", passed);
+    }
+
+    {
+        QueueVector<int> queue(3);
+        updateOverall(allPassed, "queue empty after construction", queue.isEmpty());
+    }
+
+    {
+        QueueVector<int> queue(3);
+        queue.enQueue(10);
+        queue.enQueue(20);
+        queue.enQueue(30);
+
+        bool passed = !queue.isEmpty();
+        passed = passed && (queue.deQueue() == 10);
+        passed = passed && (queue.deQueue() == 20);
+        passed = passed && (queue.deQueue() == 30);
+        passed = passed && queue.isEmpty();
+
+        updateOverall(allPassed, "queue enqueue/dequeue order", passed);
+    }
+
+    {
+        QueueVector<int> queue(2);
+        queue.enQueue(1);
+        queue.enQueue(2);
+        queue.enQueue(3);
+
+        bool passed = (queue.deQueue() == 1);
+        passed = passed && (queue.deQueue() == 2);
+        passed = passed && (queue.deQueue() == 3);
+        passed = passed && queue.isEmpty();
+
+        updateOverall(allPassed, "queue vector grows", passed);
+    }
+
+    {
+        QueueVector<int> queue(3);
+        queue.enQueue(1);
+        queue.enQueue(2);
+        bool passed = (queue.deQueue() == 1);
+        queue.enQueue(3);
+        queue.enQueue(4);
+
+        passed = passed && (queue.deQueue() == 2);
+        passed = passed && (queue.deQueue() == 3);
+        passed = passed && (queue.deQueue() == 4);
+        passed = passed && queue.isEmpty();
+
+        updateOverall(allPassed, "queue ring order after wrap", passed);
+    }
+
+    {
+        QueueVector<int> queue(1);
+        bool passed = false;
+
+        try {
+            queue.deQueue();
+        } catch (const QueueUnderflow&) {
+            passed = true;
+        } catch (...) {
+            passed = false;
+        }
+
+        updateOverall(allPassed, "queue underflow throws", passed);
+    }
+
+    {
+        bool passed = false;
+
+        try {
+            QueueVector<int> queue(0);
+        } catch (const WrongQueueSize&) {
+            passed = true;
+        } catch (...) {
+            passed = false;
+        }
+
+        updateOverall(allPassed, "queue wrong size throws", passed);
+    }
+
+    {
+        QueueVector<int> source(3);
+        source.enQueue(1);
+        source.enQueue(2);
+
+        QueueVector<int> copy(1);
+        copy = source;
+        source.deQueue();
+        source.enQueue(99);
+
+        bool passed = (copy.deQueue() == 1);
+        passed = passed && (copy.deQueue() == 2);
+        passed = passed && copy.isEmpty();
+
+        updateOverall(allPassed, "queue copy assignment", passed);
+    }
+
+    {
+        QueueVector<int> source(3);
+        source.enQueue(4);
+        source.enQueue(5);
+
+        QueueVector<int> copy(source);
+        source.deQueue();
+        source.enQueue(9);
+
+        bool passed = (copy.deQueue() == 4);
+        passed = passed && (copy.deQueue() == 5);
+        passed = passed && copy.isEmpty();
+
+        updateOverall(allPassed, "queue copy constructor", passed);
+    }
+
+    {
+        QueueVector<int> source(3);
+        source.enQueue(7);
+        source.enQueue(8);
+
+        QueueVector<int> moved(std::move(source));
+
+        bool passed = (moved.deQueue() == 7);
+        passed = passed && (moved.deQueue() == 8);
+        passed = passed && moved.isEmpty();
+        passed = passed && source.isEmpty();
+
+        updateOverall(allPassed, "queue move constructor", passed);
+    }
+
+    {
+        QueueVector<int> source(3);
+        source.enQueue(11);
+        source.enQueue(12);
+
+        QueueVector<int> moved(1);
+        moved = std::move(source);
+
+        bool passed = (moved.deQueue() == 11);
+        passed = passed && (moved.deQueue() == 12);
+        passed = passed && moved.isEmpty();
+        passed = passed && source.isEmpty();
+
+        updateOverall(allPassed, "queue move assignment", passed);
+    }
+
+    {
+        QueueUnderflow ex;
+        bool passed = std::strcmp(ex.what(), "Queue underflow error\n") == 0;
+        updateOverall(allPassed, "queue underflow message", passed);
+    }
+
+    {
+        WrongQueueSize ex;
+        bool passed = std::strcmp(ex.what(), "Wrong queue size error\n") == 0;
+        updateOverall(allPassed, "wrong queue size message", passed);
     }
 
     std::cout << (allPassed ? "ALL TESTS PASSED" : "SOME TESTS FAILED") << '\n';

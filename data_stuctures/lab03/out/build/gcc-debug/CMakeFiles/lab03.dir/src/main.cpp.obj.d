@@ -146,4 +146,6 @@ CMakeFiles/lab03.dir/src/main.cpp.obj: \
  C:/Users/hlebushek/Desktop/c++/data_stuctures/lab03/include/StackArray.h \
  C:/Users/hlebushek/Desktop/c++/data_stuctures/lab03/include/Stack.h \
  C:/Users/hlebushek/Desktop/c++/data_stuctures/lab03/include/Exceptions.h \
+ C:/Users/hlebushek/Desktop/c++/data_stuctures/lab03/include/QueueVector.h \
+ C:/Users/hlebushek/Desktop/c++/data_stuctures/lab03/include/Queue.h \
  C:/Users/hlebushek/Desktop/c++/data_stuctures/lab03/include/checkBalanceBrackets.h

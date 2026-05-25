@@ -1,5 +1,6 @@
 #include "CrossReferences.h"
 
+#include <fstream>
 #include <iostream>
 #include <stdexcept>
 
@@ -148,6 +149,22 @@ Vector<std::string> readTextFromConsole()
 
     std::cout << "Enter text. Empty line finishes input.\n";
     while (std::getline(std::cin, line) && !line.empty()) {
+        lines.push_back(line);
+    }
+
+    return lines;
+}
+
+Vector<std::string> readTextFromFile(const std::string& fileName)
+{
+    std::ifstream input(fileName);
+    if (!input.is_open()) {
+        throw std::runtime_error("Cannot open file: " + fileName);
+    }
+
+    Vector<std::string> lines;
+    std::string line;
+    while (std::getline(input, line)) {
         lines.push_back(line);
     }
 
@@ -350,6 +367,24 @@ void runTests()
               "empty text",
               passed,
               failed);
+    }
+
+    {
+        bool fileWasRead = false;
+        try {
+            Vector<std::string> lines = readTextFromFile("sample_text.txt");
+            RedBlackTree tree;
+            buildCrossReferences(lines, tree);
+            fileWasRead = lines.size() == 2 &&
+                          treeToString(tree) ==
+                              "file : 1, 2\ninput : 1, 2\nrepeats : 2\n"
+                              "uses : 1\nwords : 1\n" &&
+                          tree.isValid();
+        }
+        catch (const std::exception&) {
+            fileWasRead = false;
+        }
+        check(fileWasRead, "read text from file", passed, failed);
     }
 
     check(throwsInvalidArgumentForEmptyKey(),

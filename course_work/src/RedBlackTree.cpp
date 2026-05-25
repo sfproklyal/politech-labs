@@ -59,7 +59,6 @@ void RedBlackTree::leftRotate(Node* node)
 
 void RedBlackTree::rightRotate(Node* node)
 {
-    // Rotation keeps the binary-search order and changes only local links.
     Node* left = node->left_;
     node->left_ = left->right_;
 
@@ -149,7 +148,6 @@ void RedBlackTree::transplant(Node* oldNode, Node* newNode)
 
 void RedBlackTree::fixRemove(Node* node)
 {
-    // Restore black height after deleting a black node.
     while (node != root_ && node->color_ == COLOR_BLACK) {
         if (node == node->parent_->left_) {
             Node* brother = node->parent_->right_;
