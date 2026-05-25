@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Users/hlebushek/Desktop/c++/programming_tech/labs/labT4/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/labT4.dir/includes_CXX.rsp -g -o CMakeFiles\\labT4.dir\\src\\main.cpp.obj -c C:\\Users\\hlebushek\\Desktop\\c++\\programming_tech\\labs\\labT4\\src\\main.cpp",
-  "file": "C:/Users/hlebushek/Desktop/c++/programming_tech/labs/labT4/src/main.cpp",
-  "output": "CMakeFiles/labT4.dir/src/main.cpp.obj"
-}
-]

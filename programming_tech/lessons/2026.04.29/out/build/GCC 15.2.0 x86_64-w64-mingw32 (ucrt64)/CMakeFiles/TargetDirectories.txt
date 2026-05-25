@@ -1,3 +1,0 @@
-C:/Users/hlebushek/Desktop/c++/programming_tech/lessons/2026.04.29/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/2026.04.29.dir
-C:/Users/hlebushek/Desktop/c++/programming_tech/lessons/2026.04.29/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/edit_cache.dir
-C:/Users/hlebushek/Desktop/c++/programming_tech/lessons/2026.04.29/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)/CMakeFiles/rebuild_cache.dir

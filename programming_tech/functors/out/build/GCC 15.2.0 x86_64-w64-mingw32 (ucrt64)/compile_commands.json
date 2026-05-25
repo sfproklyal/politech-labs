@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Users/hlebushek/Desktop/c++/programming_tech/functors/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\functors.dir\\main.cpp.obj -c C:\\Users\\hlebushek\\Desktop\\c++\\programming_tech\\functors\\main.cpp",
-  "file": "C:/Users/hlebushek/Desktop/c++/programming_tech/functors/main.cpp",
-  "output": "CMakeFiles/functors.dir/main.cpp.obj"
-}
-]

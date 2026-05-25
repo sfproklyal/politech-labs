@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Users/hlebushek/Desktop/c++/data_stuctures/lab05/out/build/GCC 15.2.0 x86_64-w64-mingw32 (ucrt64)",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/lab05.dir/includes_CXX.rsp -g -o CMakeFiles\\lab05.dir\\src\\main.cpp.obj -c C:\\Users\\hlebushek\\Desktop\\c++\\data_stuctures\\lab05\\src\\main.cpp",
-  "file": "C:/Users/hlebushek/Desktop/c++/data_stuctures/lab05/src/main.cpp",
-  "output": "CMakeFiles/lab05.dir/src/main.cpp.obj"
-}
-]
