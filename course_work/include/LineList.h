@@ -3,6 +3,7 @@
 
 #include <cstddef>
 #include <iostream>
+#include <string>
 
 class LineList
 {
@@ -16,6 +17,7 @@ public:
     void clear();
     bool isEmpty() const;
     size_t getSize() const;
+    std::string toString() const;
     void print(std::ostream& out) const;
 
 private:

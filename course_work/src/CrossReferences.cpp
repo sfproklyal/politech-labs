@@ -1,9 +1,7 @@
 #include "CrossReferences.h"
 
-#include <cctype>
 #include <fstream>
 #include <iostream>
-#include <sstream>
 #include <stdexcept>
 
 #include "RedBlackTree.h"
@@ -14,15 +12,18 @@ std::string toLower(const std::string& word)
 {
     std::string result = word;
     for (size_t i = 0; i < result.size(); i++) {
-        result[i] = static_cast<char>(
-            std::tolower(static_cast<unsigned char>(result[i])));
+        if (result[i] >= 'A' && result[i] <= 'Z') {
+            result[i] = static_cast<char>(result[i] - 'A' + 'a');
+        }
     }
     return result;
 }
 
 bool isWordSymbol(unsigned char ch)
 {
-    return std::isalnum(ch) != 0;
+    return (ch >= 'a' && ch <= 'z') ||
+           (ch >= 'A' && ch <= 'Z') ||
+           (ch >= '0' && ch <= '9');
 }
 
 std::string lineListToString(const LineList* lines)
@@ -31,16 +32,12 @@ std::string lineListToString(const LineList* lines)
         return "";
     }
 
-    std::ostringstream out;
-    lines->print(out);
-    return out.str();
+    return lines->toString();
 }
 
 std::string treeToString(const RedBlackTree& tree)
 {
-    std::ostringstream out;
-    tree.print(out);
-    return out.str();
+    return tree.toString();
 }
 
 void check(bool condition,
@@ -80,7 +77,7 @@ void addLineToTree(RedBlackTree& tree,
     }
 }
 
-void buildCrossReferences(const std::vector<std::string>& lines,
+void buildCrossReferences(const Vector<std::string>& lines,
                           RedBlackTree& tree)
 {
     for (size_t i = 0; i < lines.size(); i++) {
@@ -88,7 +85,7 @@ void buildCrossReferences(const std::vector<std::string>& lines,
     }
 }
 
-void printNumberedText(const std::vector<std::string>& lines)
+void printNumberedText(const Vector<std::string>& lines)
 {
     std::cout << "\nText with line numbers:\n";
     for (size_t i = 0; i < lines.size(); i++) {
@@ -156,14 +153,14 @@ bool throwsRuntimeErrorForMissingFile()
 
 }  // namespace
 
-std::vector<std::string> readTextFromFile(const std::string& path)
+Vector<std::string> readTextFromFile(const std::string& path)
 {
     std::ifstream file(path);
     if (!file.is_open()) {
         throw std::runtime_error("Can not open file: " + path);
     }
 
-    std::vector<std::string> lines;
+    Vector<std::string> lines;
     std::string line;
 
     while (std::getline(file, line)) {
@@ -173,9 +170,9 @@ std::vector<std::string> readTextFromFile(const std::string& path)
     return lines;
 }
 
-std::vector<std::string> readTextFromConsole()
+Vector<std::string> readTextFromConsole()
 {
-    std::vector<std::string> lines;
+    Vector<std::string> lines;
     std::string line;
 
     std::cout << "Enter text. Empty line finishes input.\n";
@@ -186,16 +183,16 @@ std::vector<std::string> readTextFromConsole()
     return lines;
 }
 
-std::vector<std::string> getDemoText()
+Vector<std::string> getDemoText()
 {
-    return {
-        "Apple is red.",
-        "Tree is green.",
-        "Apple grows on tree."
-    };
+    Vector<std::string> lines;
+    lines.push_back("Apple is red.");
+    lines.push_back("Tree is green.");
+    lines.push_back("Apple grows on tree.");
+    return lines;
 }
 
-void processText(const std::vector<std::string>& lines)
+void processText(const Vector<std::string>& lines)
 {
     RedBlackTree tree;
     buildCrossReferences(lines, tree);
@@ -353,7 +350,9 @@ void runTests()
 
     {
         RedBlackTree tree;
-        buildCrossReferences({"Apple, apple! Tree."}, tree);
+        Vector<std::string> lines;
+        lines.push_back("Apple, apple! Tree.");
+        buildCrossReferences(lines, tree);
         check(treeToString(tree) == "apple : 1\ntree : 1\n" &&
                   tree.isValid(),
               "punctuation separates words",
@@ -363,7 +362,9 @@ void runTests()
 
     {
         RedBlackTree tree;
-        buildCrossReferences({"Tree tree TREE"}, tree);
+        Vector<std::string> lines;
+        lines.push_back("Tree tree TREE");
+        buildCrossReferences(lines, tree);
         check(treeToString(tree) == "tree : 1\n" && tree.isValid(),
               "latin case is ignored",
               passed,
@@ -372,7 +373,8 @@ void runTests()
 
     {
         RedBlackTree tree;
-        buildCrossReferences({}, tree);
+        Vector<std::string> lines;
+        buildCrossReferences(lines, tree);
         check(tree.isEmpty() && tree.isValid(),
               "empty text",
               passed,

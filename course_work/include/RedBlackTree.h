@@ -19,6 +19,7 @@ public:
     bool remove(const std::string& key);
     bool isEmpty() const;
     bool isValid() const;
+    std::string toString() const;
     void print(std::ostream& out) const;
     void printTree(std::ostream& out) const;
 
@@ -59,6 +60,7 @@ private:
     int getBlackHeight(Node* node) const;
 
     void clear(Node* node);
+    void appendToString(Node* node, std::string& result) const;
     void print(Node* node, std::ostream& out) const;
     void printTree(Node* node, std::ostream& out) const;
 };

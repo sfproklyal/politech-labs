@@ -2,6 +2,26 @@
 
 #include <stdexcept>
 
+namespace {
+
+std::string intToString(int value)
+{
+    if (value == 0) {
+        return "0";
+    }
+
+    std::string result;
+    int number = value;
+    while (number > 0) {
+        char digit = static_cast<char>('0' + number % 10);
+        result.insert(0, 1, digit);
+        number /= 10;
+    }
+    return result;
+}
+
+}
+
 LineList::Node::Node(int line, Node* next) : line_(line), next_(next) {}
 
 LineList::LineList() : head_(nullptr), tail_(nullptr), size_(0) {}
@@ -101,14 +121,21 @@ size_t LineList::getSize() const
     return size_;
 }
 
-void LineList::print(std::ostream& out) const
+std::string LineList::toString() const
 {
+    std::string result;
     Node* current = head_;
     while (current != nullptr) {
-        out << current->line_;
+        result += intToString(current->line_);
         if (current->next_ != nullptr) {
-            out << ", ";
+            result += ", ";
         }
         current = current->next_;
     }
+    return result;
+}
+
+void LineList::print(std::ostream& out) const
+{
+    out << toString();
 }

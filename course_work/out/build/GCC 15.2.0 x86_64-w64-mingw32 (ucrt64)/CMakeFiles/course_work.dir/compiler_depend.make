@@ -5,6 +5,7 @@ CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj: C:/Users/complucter/Desk
   C:/Users/complucter/Desktop/course_work/course_work/include/CrossReferences.h \
   C:/Users/complucter/Desktop/course_work/course_work/include/LineList.h \
   C:/Users/complucter/Desktop/course_work/course_work/include/RedBlackTree.h \
+  C:/Users/complucter/Desktop/course_work/course_work/include/Vector.h \
   C:/msys64/ucrt64/include/_mingw.h \
   C:/msys64/ucrt64/include/_mingw_mac.h \
   C:/msys64/ucrt64/include/_mingw_off_t.h \
@@ -55,18 +56,15 @@ CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj: C:/Users/complucter/Desk
   C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_relops.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
@@ -74,7 +72,6 @@ CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj: C:/Users/complucter/Desk
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
   C:/msys64/ucrt64/include/c++/15.2.0/cctype \
   C:/msys64/ucrt64/include/c++/15.2.0/cerrno \
@@ -102,7 +99,6 @@ CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj: C:/Users/complucter/Desk
   C:/msys64/ucrt64/include/c++/15.2.0/new \
   C:/msys64/ucrt64/include/c++/15.2.0/ostream \
   C:/msys64/ucrt64/include/c++/15.2.0/pstl/pstl_config.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/sstream \
   C:/msys64/ucrt64/include/c++/15.2.0/stdexcept \
   C:/msys64/ucrt64/include/c++/15.2.0/stdlib.h \
   C:/msys64/ucrt64/include/c++/15.2.0/streambuf \
@@ -112,7 +108,7 @@ CMakeFiles/course_work.dir/src/CrossReferences.cpp.obj: C:/Users/complucter/Desk
   C:/msys64/ucrt64/include/c++/15.2.0/tuple \
   C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
   C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
-  C:/msys64/ucrt64/include/c++/15.2.0/vector \
+  C:/msys64/ucrt64/include/c++/15.2.0/utility \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -471,6 +467,7 @@ CMakeFiles/course_work.dir/src/RedBlackTree.cpp.obj: C:/Users/complucter/Desktop
 
 CMakeFiles/course_work.dir/src/main.cpp.obj: C:/Users/complucter/Desktop/course_work/course_work/src/main.cpp \
   C:/Users/complucter/Desktop/course_work/course_work/include/CrossReferences.h \
+  C:/Users/complucter/Desktop/course_work/course_work/include/Vector.h \
   C:/msys64/ucrt64/include/_mingw.h \
   C:/msys64/ucrt64/include/_mingw_mac.h \
   C:/msys64/ucrt64/include/_mingw_off_t.h \
@@ -521,15 +518,13 @@ CMakeFiles/course_work.dir/src/main.cpp.obj: C:/Users/complucter/Desktop/course_
   C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_algobase.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_construct.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_function.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h \
+  C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_relops.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/string_view.tcc \
@@ -537,7 +532,6 @@ CMakeFiles/course_work.dir/src/main.cpp.obj: C:/Users/complucter/Desktop/course_
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h \
-  C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc \
   C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h \
   C:/msys64/ucrt64/include/c++/15.2.0/cctype \
   C:/msys64/ucrt64/include/c++/15.2.0/cerrno \
@@ -573,7 +567,7 @@ CMakeFiles/course_work.dir/src/main.cpp.obj: C:/Users/complucter/Desktop/course_
   C:/msys64/ucrt64/include/c++/15.2.0/tuple \
   C:/msys64/ucrt64/include/c++/15.2.0/type_traits \
   C:/msys64/ucrt64/include/c++/15.2.0/typeinfo \
-  C:/msys64/ucrt64/include/c++/15.2.0/vector \
+  C:/msys64/ucrt64/include/c++/15.2.0/utility \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -626,6 +620,12 @@ CMakeFiles/course_work.dir/src/main.cpp.obj: C:/Users/complucter/Desktop/course_
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h
 
 
+C:/msys64/ucrt64/include/c++/15.2.0/bits/new_allocator.h:
+
+C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.tcc:
+
+C:/Users/complucter/Desktop/course_work/course_work/include/Vector.h:
+
 C:/Users/complucter/Desktop/course_work/course_work/src/CrossReferences.cpp:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/localefwd.h:
@@ -644,19 +644,15 @@ C:/Users/complucter/Desktop/course_work/course_work/include/LineList.h:
 
 C:/Users/complucter/Desktop/course_work/course_work/include/RedBlackTree.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_bvector.h:
-
-C:/msys64/ucrt64/include/_mingw_secapi.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf.tcc:
 
 C:/msys64/ucrt64/include/_mingw.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/std_abs.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/sstream:
-
 C:/msys64/ucrt64/include/_mingw_off_t.h:
+
+C:/msys64/ucrt64/include/_mingw_secapi.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/istream:
 
@@ -672,8 +668,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/alloc_traits.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_vector.h:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/refwrap.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/allocator.h:
@@ -683,10 +677,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_ios.tcc:
 C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/cxxabi_init_exception.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/new_allocator.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/basic_string.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/memory_resource.h:
 
@@ -772,15 +762,13 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/range_access.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/requires_hosted.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/sstream.tcc:
-
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
 C:/Users/complucter/Desktop/course_work/course_work/src/LineList.cpp:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_pair.h:
 
-C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_uninitialized.h:
+C:/msys64/ucrt64/include/c++/15.2.0/bits/stl_relops.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/streambuf_iterator.h:
 
@@ -795,8 +783,6 @@ C:/msys64/ucrt64/include/c++/15.2.0/bits/uses_allocator_args.h:
 C:/msys64/ucrt64/include/corecrt.h:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/utility.h:
-
-C:/msys64/ucrt64/include/c++/15.2.0/bits/vector.tcc:
 
 C:/msys64/ucrt64/include/c++/15.2.0/bits/version.h:
 
@@ -860,7 +846,7 @@ C:/msys64/ucrt64/include/c++/15.2.0/type_traits:
 
 C:/msys64/ucrt64/include/c++/15.2.0/typeinfo:
 
-C:/msys64/ucrt64/include/c++/15.2.0/vector:
+C:/msys64/ucrt64/include/c++/15.2.0/utility:
 
 C:/msys64/ucrt64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 

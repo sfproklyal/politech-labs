@@ -2,13 +2,14 @@
 #define CROSS_REFERENCES_H
 
 #include <string>
-#include <vector>
 
-std::vector<std::string> readTextFromFile(const std::string& path);
-std::vector<std::string> readTextFromConsole();
-std::vector<std::string> getDemoText();
+#include "Vector.h"
 
-void processText(const std::vector<std::string>& lines);
+Vector<std::string> readTextFromFile(const std::string& path);
+Vector<std::string> readTextFromConsole();
+Vector<std::string> getDemoText();
+
+void processText(const Vector<std::string>& lines);
 void runTests();
 
 #endif

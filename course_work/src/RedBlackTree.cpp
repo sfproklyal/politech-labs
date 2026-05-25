@@ -265,6 +265,20 @@ void RedBlackTree::print(Node* node, std::ostream& out) const
     print(node->right_, out);
 }
 
+void RedBlackTree::appendToString(Node* node, std::string& result) const
+{
+    if (node == nil_) {
+        return;
+    }
+
+    appendToString(node->left_, result);
+    result += node->key_;
+    result += " : ";
+    result += node->lines_.toString();
+    result += '\n';
+    appendToString(node->right_, result);
+}
+
 void RedBlackTree::printTree(Node* node, std::ostream& out) const
 {
     if (node == nil_) {
@@ -414,9 +428,16 @@ bool RedBlackTree::isValid() const
     return getBlackHeight(root_) != -1;
 }
 
+std::string RedBlackTree::toString() const
+{
+    std::string result;
+    appendToString(root_, result);
+    return result;
+}
+
 void RedBlackTree::print(std::ostream& out) const
 {
-    print(root_, out);
+    out << toString();
 }
 
 void RedBlackTree::printTree(std::ostream& out) const
