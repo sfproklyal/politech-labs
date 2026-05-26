@@ -85,10 +85,19 @@ void CompositeShape::print() const {
               << "[" << getName()
               << ", (" << center.x << ", " << center.y << ")"
               << ", " << getArea()
-              << '\n';
+              << ":\n";
 
     for (size_t i = 0; i < shapes_.size(); i++) {
-        shapes_.at(i)->print();
+        Point shapeCenter = shapes_.at(i)->getCenter();
+
+        std::cout << shapes_.at(i)->getName()
+                  << ", (" << shapeCenter.x << ", " << shapeCenter.y << ")"
+                  << ", " << shapes_.at(i)->getArea();
+
+        if (i + 1 < shapes_.size()) {
+            std::cout << ",";
+        }
+
         std::cout << '\n';
     }
 
