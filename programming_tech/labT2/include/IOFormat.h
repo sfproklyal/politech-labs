@@ -2,11 +2,16 @@
 #define IOFORMAT_H
 
 #include <iostream>
-#include <string> 
+#include <string>
 
 struct DelimeterIO
 {
   char exp;
+};
+
+struct LabelIO
+{
+  std::string& ref;
 };
 
 struct DblSciIO
@@ -25,6 +30,7 @@ struct StringIO
 };
 
 std::istream& operator>>(std::istream& in, DelimeterIO&& dest);
+std::istream& operator>>(std::istream& in, LabelIO&& dest);
 std::istream& operator>>(std::istream& in, DblSciIO&& dest);
 std::istream& operator>>(std::istream& in, UllBinIO&& dest);
 std::istream& operator>>(std::istream& in, StringIO&& dest);

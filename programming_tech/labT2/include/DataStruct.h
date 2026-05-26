@@ -1,5 +1,5 @@
-#ifndef DATASTRUCT_H
-#define DATASTRUCT_H
+#ifndef DATA_STRUCT_H
+#define DATA_STRUCT_H
 
 #include <iostream>
 #include <string>
