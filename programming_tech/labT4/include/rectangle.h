@@ -13,8 +13,6 @@ private:
 
 public:
     Rectangle(const Point& leftBottom, const Point& rightTop_);
-    // Rectangle(const Rectangle& other);
-    // Rectangle(Rectangle&& other);
     
     double getArea() const override;
     Point getCenter() const override;

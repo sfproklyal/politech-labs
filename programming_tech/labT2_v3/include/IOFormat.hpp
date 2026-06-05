@@ -1,17 +1,12 @@
-#ifndef IOFORMAT_H
-#define IOFORMAT_H
+#ifndef IOFORMAT_HPP
+#define IOFORMAT_HPP
 
-#include <iostream>
+#include <ios>
 #include <string>
 
 struct DelimeterIO
 {
     char exp;
-};
-
-struct LabelIO
-{
-    std::string& ref;
 };
 
 struct DblSciIO
@@ -30,22 +25,12 @@ struct StringIO
 };
 
 std::istream& operator>>(std::istream& in, DelimeterIO&& dest);
-std::istream& operator>>(std::istream& in, LabelIO&& dest);
 std::istream& operator>>(std::istream& in, DblSciIO&& dest);
 std::istream& operator>>(std::istream& in, UllBinIO&& dest);
 std::istream& operator>>(std::istream& in, StringIO&& dest);
 
-class iofguard
-{
-public:
-    iofguard(std::basic_ios<char>& s);
-    ~iofguard();
+std::string formatDblSci(double value);
+std::string formatUllBin(unsigned long long value);
 
-private:
-    std::basic_ios<char>& s_;
-    char fill_;
-    std::streamsize precision_;
-    std::basic_ios<char>::fmtflags fmt_;
-};
 
 #endif

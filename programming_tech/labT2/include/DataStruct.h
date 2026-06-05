@@ -6,14 +6,14 @@
 
 struct DataStruct
 {
-  double key1;
-  unsigned long long key2;
-  std::string key3;
+    double key1;
+    unsigned long long key2;
+    std::string key3;
 };
 
 struct DataStructComparator
 {
-  bool operator()(const DataStruct& left, const DataStruct& right) const;
+    bool operator()(const DataStruct& left, const DataStruct& right) const;
 };
 
 std::istream& operator>>(std::istream& in, DataStruct& data);

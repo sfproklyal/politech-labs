@@ -19,6 +19,7 @@ public:
         double& minX, double& minY,
         double& maxX, double& maxY
     ) const = 0;
+    
 
     virtual void print() const = 0;
 };

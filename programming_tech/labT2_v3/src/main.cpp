@@ -1,9 +1,11 @@
-#include "DataStruct.h"
+#include "DataStruct.hpp"
 
 #include <algorithm>
+#include <iostream>
 #include <iterator>
 #include <limits>
 #include <vector>
+
 
 int main()
 {
@@ -24,7 +26,7 @@ int main()
         }
     }
 
-    std::sort(data.begin(), data.end(), DataStructComparator());
+    std::sort(data.begin(), data.end(), compareDataStruct);
 
     std::copy(
         data.begin(),
